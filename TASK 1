@@ -1,0 +1,45 @@
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from pandas.tseries.offsets import DateOffset
+
+import re
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+
+from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import GridSearchCV, train_test_split
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import classification_report
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn import metrics
+from sklearn.svm import SVC
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn import metrics
+from sklearn import preprocessing
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import GridSearchCV
+from sklearn.tree import export_graphviz
+ 
+from IPython.display import Image 
+from six import StringIO
+
+import six
+import sys
+sys.modules['sklearn.externals.six'] = six
+from sklearn.externals.six import StringIO 
+
+from pydot import graph_from_dot_data
+from sklearn.utils import resample
+
+
+
+from sklearn.tree import export_graphviz
+import pydot
+import random
+
+df = pd.read_csv('companies.csv')
